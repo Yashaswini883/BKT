@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BKT</title>
+<style>
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #111111; }
+  header { padding: 20px 24px; border-bottom: 1px solid #e3e3e3; }
+  h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<header><h1>BKT</h1></header>
+
+<!-- Paste the Embedded Messaging code snippet from Salesforce here, just above </body>. -->
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL00000g8FmT',
+				'BKT_CHANNEL',
+				'https://pr1791956767254.my.site.com/ESWBKTCHANNEL1794572484485',
+				{
+					scrt2URL: 'https://pr1791956767254.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://pr1791956767254.my.site.com/ESWBKTCHANNEL1794572484485/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
